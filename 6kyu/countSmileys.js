@@ -27,13 +27,13 @@ function countSmileys(arr) {
         [')', 'D'].includes(face.slice(-1))
             ) {
         
-        // if face is 2 chars, it's automatically valid
-        return face.length === 2 ? true :
-                face.length === 3 ?
-                    // if it's 3 characters, its middle character must be a nose
-                    ['-', '~'].includes(face.charAt(1)) :
-                    // otherwise, it is invalid
-                    false
+            // if face is 2 chars, it's automatically valid
+            return face.length === 2 ? true :
+                    face.length === 3 ?
+                        // if it's 3 characters, its middle character must be a nose
+                        ['-', '~'].includes(face.charAt(1)) :
+                        // otherwise, it is invalid
+                        false
         }
     }).length
 }
