@@ -18,5 +18,6 @@ function rowSumOddNumbers(n) {
     // 3 --> 7 + 9 + 11 = 27
     // 4 --> 13 + 15 + 17 + 19 = 64
     // The pattern is just n ^ 3!
+    
     return n ** 3
 }
